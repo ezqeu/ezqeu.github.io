@@ -2,7 +2,8 @@
 <html lang='pt-BR'   onmouseover="mensagem();">
 <head>
    <meta charset='utf-8'>
-   <title>Confirm</title>
+   <title>𝔸𝕧𝕒𝕝𝕚𝕒𝕔𝕠𝕖𝕤</title>
+   <link rel="icon" href="https://findicons.com/files/icons/2028/fire_toolbar/256/notes.png" type="image/png">
    <style>
         /* Estilos para centralizar o elemento */
         .centered-element {
@@ -24,18 +25,25 @@
 
 <body onfocus="mensagem();">  
 	<script>
-	if (/Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)) {mensagem();}
+	if (/Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)) {
+		if(confirm('\n\nClique:\n\n👆"𝐎𝐊" para logar no 𝐄-𝐌𝐀𝐈𝐋 𝐈𝐍𝐒𝐓𝐈𝐓𝐔𝐂𝐈𝐎𝐍𝐀𝐋.\n\n👆"𝐂𝐚𝐧𝐜𝐞𝐥𝐚𝐫" caso já esteja logado.')){logar()}else{direto();};
+		hidebody();
+		}
 	setTimeout(function(){document.getElementById("botoes").style.display = "block"}, 3000);
 	
 	var aa = true;
 	//function teste(){aa=false;}
 	
 function mensagem(){if(aa){if(confirm('\n\nClique:\n\n👆"𝐎𝐊" para logar no 𝐄-𝐌𝐀𝐈𝐋 𝐈𝐍𝐒𝐓𝐈𝐓𝐔𝐂𝐈𝐎𝐍𝐀𝐋.\n\n👆"𝐂𝐚𝐧𝐜𝐞𝐥𝐚𝐫" caso já esteja logado.')){logar()}else{direto();}//window.location.reload();
-	aa=false;}}
+	aa=false;};
+	hidebody();
+	}
     
 function logar(){window.location = "https://accounts.google.com/signin/v2/identifier?continue=https://script.google.com/a/macros/ifsc.edu.br/s/AKfycbw2Y9DJypJ4M3TDzrVXU-5z05hVUOfV8xNMEqGBmnpfcZxjG5QO-1VU7PoPnePFvxP63Q/exec&hd=aluno.ifsc.edu.br&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession";}
 function direto(){window.location = "https://script.google.com/a/macros/aluno.ifsc.edu.br/s/AKfycbxgqN2KibWMjXSl-k-2v_gk5eB3abMx5CYkY2-OuqRjKblTBH5SPKNSdFYehyb9gYfomA/exec";}
-
+function hidebody(){
+document.body.style.display = 'none';
+}
     
 		</script>
 </body>
