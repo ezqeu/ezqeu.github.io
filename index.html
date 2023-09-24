@@ -24,7 +24,7 @@
 
 <body onfocus="mensagem();">  
 	<script>
-	
+	if (/Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)) {mensagem();}
 	setTimeout(function(){document.getElementById("botoes").style.display = "block"}, 3000);
 	
 	var aa = true;
